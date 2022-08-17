@@ -6,7 +6,7 @@ def main():
     """The main routine"""
 
     if len(sys.argv) > 1:
-        physiofit.ui.cli.main()
+        physiofit4galaxy.ui.cli.main()
     else:
         return "To launch the GUI, please use the original Physiofit package " \
                "and not PhysioFit4Galaxy"

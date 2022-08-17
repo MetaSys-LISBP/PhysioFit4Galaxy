@@ -5,7 +5,7 @@ import argparse
 from ast import literal_eval
 from copy import copy
 
-from physiofit.base.io import IoHandler
+from physiofit4galaxy.base.io import IoHandler
 
 """
 ###########
