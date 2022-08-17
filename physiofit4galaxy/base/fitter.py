@@ -9,7 +9,7 @@ from pandas import DataFrame
 from scipy.optimize import minimize, differential_evolution
 from scipy.stats import chi2
 
-from physiofit.logger import initialize_fitter_logger
+from physiofit4galaxy.logger import initialize_fitter_logger
 
 mod_logger = logging.getLogger("PhysioFit.base.fitter")
 

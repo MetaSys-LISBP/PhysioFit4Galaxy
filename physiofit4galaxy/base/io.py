@@ -8,7 +8,7 @@ import numpy as np
 from matplotlib.backends.backend_pdf import PdfPages
 from pandas import DataFrame, read_csv
 
-from physiofit.base.fitter import PhysioFitter
+from physiofit4galaxy.base.fitter import PhysioFitter
 
 mod_logger = logging.getLogger("PhysioFit.base.io")
 

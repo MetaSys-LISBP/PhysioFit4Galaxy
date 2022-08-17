@@ -1,6 +1,6 @@
 import sys
 
-import physiofit.ui.cli
+import physiofit4galaxy.ui.cli
 
 def main():
     """The main routine"""
