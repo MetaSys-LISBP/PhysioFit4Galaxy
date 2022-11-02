@@ -40,7 +40,7 @@ def parse_args():
     parser.add_argument("-i", "--vini", type=float,
                         help="Select an initial value for fluxes to estimate")
     parser.add_argument("-s", "--sd", type=str,
-                        help="Standard deviation on measurements. Give weights in "
+                        help="Standard deviation on measurements. Give sds in "
                              "dictionary format")
     parser.add_argument("-cm", "--conc_met_bounds", type=str,
                         help="Bounds on initial metabolite concentrations. "
@@ -127,7 +127,7 @@ class Cli:
 
         # Transform the strings into the right types
         for arg in ["deg", "conc_met_bounds", "flux_met_bounds",
-                    "conc_biom_bounds", "flux_biom_bounds"]:
+                    "conc_biom_bounds", "flux_biom_bounds", "sd"]:
             if arg in fitter_args.keys():
                 fitter_args[arg] = literal_eval(fitter_args.pop(arg))
 
