@@ -212,7 +212,7 @@ class PhysioFitter:
         self.logger.info("Initializing sd matrix...\n")
 
         # If sd is None, we generate the default matrix
-        if self.sd is None:
+        if self.sd is None or self.sd == {}:
             try:
                 self.sd = {"X": 0.2}
                 for col in self.data.columns[2:]:
